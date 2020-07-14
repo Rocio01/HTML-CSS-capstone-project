@@ -97,6 +97,18 @@ video {
           box-sizing: border-box;
 }
 
+body {
+  background-color: #eeeeee;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,7 +125,6 @@ nav .nav-left {
 }
 
 nav a {
-  text-decoration: none;
   color: #888;
   font-weight: 600;
 }
@@ -125,7 +136,6 @@ nav ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  list-style-type: none;
   background-color: #383838;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -253,37 +263,13 @@ form input::placeholder {
           justify-content: center;
   margin: 3em;
   color: #888;
+  background-color: white;
 }
 
 .adds-container h4 {
   color: #d35266;
   padding-bottom: 0.5em;
   font-size: 2em;
-}
-
-.adds-container .fas-l {
-  background-color: #e6e6e6;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 25px;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  color: #d35266;
-}
-
-.adds-container .fas-l:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  border: 2px solid #888;
 }
 
 .adds-container h3 {
@@ -325,6 +311,135 @@ form input::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.fas-l {
+  background-color: #e6e6e6;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #d35266;
+}
+
+.fas-l:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  border: 2px solid #888;
+}
+
+.dogs-cats .columns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dogs-cats .columns div {
+  margin: 1em;
+}
+
+.dogs-cats .item {
+  background-color: white;
+  padding: 1em;
+  border: 2px solid #d5d5d5;
+  border-radius: 5px;
+}
+
+.dogs-cats .item a {
+  margin: 0;
+  padding: 0;
+}
+
+.dogs-cats .item img {
+  width: 100%;
+  height: 200px;
+}
+
+.dogs-cats .item img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.dogs-cats ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-left: 1em;
+}
+
+.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.middle a {
+  padding: 1em;
+  margin: auto 1em;
+}
+
+.middle p {
+  color: #888;
+  margin-top: 1em;
+}
+
+.middle p a {
+  padding: 0;
+  margin: 0;
+  color: #d35266;
+  font-weight: 600;
+}
+
+.donation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.donation a {
+  margin: 0;
+  padding: 0;
+}
+
+.donation a i {
+  font-size: 2em;
+  color: #888;
+}
+
+.donation a span {
+  color: #d35266;
 }
 
 button {
@@ -382,6 +497,9 @@ form button {
     display: none;
   }
   .principal {
+    display: none;
+  }
+  .hot-adds {
     display: none;
   }
 }

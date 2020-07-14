@@ -98,6 +98,17 @@ video {
 
 @import "config";
 
+body {
+  background-color: lighten($secondary-color, 40%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -109,7 +120,6 @@ nav {
   }
 
   a {
-    text-decoration: none;
     color: $secondary-color;
     font-weight: 600;
   }
@@ -117,7 +127,6 @@ nav {
   ul {
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;
     background-color: $third-color;
     align-items: center;
     margin: 0;
@@ -207,6 +216,7 @@ form {
   justify-content: center;
   margin: 3em;
   color: $secondary-color;
+  background-color: lighten($secondary-color, 70%);
 
   h4 {
     color: $principal-color;
@@ -214,25 +224,7 @@ form {
     font-size: 2em;
   }
 
-  .fas-l {
-    background-color: lighten($secondary-color, 37%);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: $principal-color;
-
-    
-  &:hover {
-    transform: scale(1.5);
-    border: 2px solid $secondary-color;
-  }
-        
-  }
+  
 
   h3 {
     padding: 0.5em;
@@ -269,6 +261,103 @@ form {
   }
  
 
+} // end adds-container
+
+.fas-l {
+  background-color: lighten($secondary-color, 37%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: $principal-color;
+
+  
+&:hover {
+  transform: scale(1.5);
+  border: 2px solid $secondary-color;
+}
+      
+}
+
+.dogs-cats {
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+        div {
+          margin: 1em;
+        }
+    }
+
+    .item {
+      background-color: lighten($secondary-color, 70%);
+      padding: 1em;
+      border: 2px solid lighten($secondary-color, 30%);
+      border-radius: 5px;
+      a {
+        margin: 0;
+        padding: 0;
+        
+      }
+      img {
+        width: 100%;
+        height: 200px;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin-left: 1em;
+  }
+}
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    padding: 1em;
+    margin: auto 1em;
+  }
+
+  p {
+    color: $secondary-color;
+    margin-top: 1em;
+    a {
+      padding: 0;
+      margin: 0;
+      color: $principal-color;
+      font-weight: 600;
+    }
+  }
+} // end of .middle
+
+.donation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  a {
+    margin: 0;
+    padding: 0;
+    i{
+      font-size: 2em;
+      color: $secondary-color;
+    }
+    span {
+      color: $principal-color;
+    }
+  }
 }
 
 @import "buttons";
