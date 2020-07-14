@@ -1,25 +1,44 @@
 @media screen and (max-width: 767px) {
-  .nav-right {
-    display: none;
-  }
 
-  .nav-left {
-    ul {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
+  nav {
+    padding: 0;
+    justify-content: space-evenly;
 
-      li {
-        margin: 5px;
-        display: flex;
-        align-self: start;
-      }
-    }
-  }
-
-  form {
-    input {
+    .nav-right {
       display: none;
     }
+
+    .nav-left {
+      margin: 0;
+      display: flex;
+      justify-content: space-evenly;
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          margin: 0;
+
+          &:nth-child(4) {
+            display: none;
+          }
+
+          &:nth-child(1) {
+            span {
+              display: none;
+            }
+          }
+        }
+
+
+      }  // end of the ul
+    } // end of the nav-left
+  } // end of the nav
+
+
+
+  .principal {
+    display: none;
   }
 }
