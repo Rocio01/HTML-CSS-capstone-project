@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px) {
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+
+                li {
+                    margin: 5px;
+                    display: flex;
+                    align-self: start;
+
+                }       
+        }
+        
+    }
+
+    form {
+        input {
+            display: none;
+        }
+    }
+}
