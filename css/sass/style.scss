@@ -99,111 +99,107 @@ video {
 @import "config";
 
 nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  background-color: $third-color;
+
+  .nav-left {
+    margin-top: 4px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: 600;
+  }
+
+  ul {
     display: flex;
-    justify-content: space-between;
-    padding: 0 3rem;
+    justify-content: space-evenly;
+    list-style-type: none;
     background-color: $third-color;
+    align-items: center;
+    margin: 0;
 
-    .nav-left {
-        margin-top: 4px;
+    li {
+      margin: auto 1rem;
+      display: flex;
+      align-items: center;
+      padding: 5px;
 
+      &:hover {
+        border: 2px solid lighten($third-color, 40%);
+        border-radius: 10px;
+      }
+
+      i,
+      img {
+        margin: auto 0.5em;
+      }
+
+      img {
+        max-width: 50px;
+        border-radius: 50%;
+        border: 1px solid $secondary-color;
+      }
     }
-
-    a {
-        text-decoration: none;
-        color: $secondary-color;
-        font-weight: 600;
-    }
-
-    ul {
-        display: flex;
-        justify-content: space-evenly;
-        list-style-type: none;
-        background-color: $third-color;
-        align-items: center;
-        margin: 0;
-
-        li {
-            margin: auto 1rem;
-            display: flex;
-            align-items: center;
-            padding: 5px;
-
-            &:hover {
-                border: 2px solid lighten($third-color, 40%);
-                border-radius: 10px;
-            }
-
-            i,
-            img {
-                margin: auto 0.5em;
-            }
-
-            img {
-                max-width: 50px;
-                border-radius: 50%;
-                border: 1px solid $secondary-color;
-            }
-        }
-
-    }
+  }
 }
 
 .principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $principal-color;
-    padding: 3rem;
-    color: lighten($secondary-color, 40%);
-    position: relative;
-   
-    &:after {
-        content: "\f1b0"; 
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-decoration: inherit;
-        position: absolute;
-        font-size: 150px;
-        color: rgba( $third-color, .3 );
-        top: 50px;
-        left: 130px;
-      }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $principal-color;
+  padding: 3rem;
+  color: lighten($secondary-color, 40%);
+  position: relative;
 
-      h1 {
-          font-size: 3em;
-          margin-bottom: 0;
-      }
+  &::after {
+    content: "\f1b0";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    font-size: 150px;
+    color: rgba($third-color, 0.3);
+    top: 50px;
+    left: 130px;
+  }
 
-      h4 {
-          font-size: 1em;
-          margin: 1em;
-      }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1em;
+    margin: 1em;
+  }
 }
 
 form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    select {
-        height: 36px;
-        color: $secondary-color;
-        padding: 0 1em;
+  select {
+    height: 36px;
+    color: $secondary-color;
+    padding: 0 1em;
+  }
+
+  input {
+    height: 36px;
+
+    &::placeholder {
+      text-align: center;
     }
-
-
-    input {
-        height: 36px;
-
-        &::placeholder {
-            text-align: center;
-        }
-    }
+  }
 }
-
 
 @import "buttons";
 @import "mobile";

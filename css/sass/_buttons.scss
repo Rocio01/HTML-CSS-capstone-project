@@ -1,15 +1,14 @@
 @import "config";
 
 button {
-    display: inline-block;
-    border-radius: 5px;
-    padding: 8px 25px;
-    margin: 3px;
-    background-color: $principal-color;
-    color: lighten($secondary-color, 30%);
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 25px;
+  margin: 3px;
+  background-color: $principal-color;
+  color: lighten($secondary-color, 30%);
 
-    &:hover {
-        transform: scale(.95);
-    }
-
+  &:hover {
+    transform: scale(0.95);
+  }
 }
