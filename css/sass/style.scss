@@ -100,15 +100,44 @@ video {
 
 body {
   background-color: lighten($secondary-color, 40%);
+  font-family: $font-stack;
 }
 
 ul {
   list-style-type: none;
 }
 
+h6 {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
+
+footer {
+  text-align: center;
+  font-size: 100%;
+
+  div {
+    background-color: $third-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+
+    i {
+      margin: 1em;
+      color: $secondary-color;
+    }
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -136,11 +165,6 @@ nav {
       display: flex;
       align-items: center;
       padding: 5px;
-
-      &:hover {
-        border: 2px solid lighten($third-color, 40%);
-        border-radius: 10px;
-      }
 
       i,
       img {
@@ -201,14 +225,36 @@ form {
     padding: 0 1em;
   }
 
+  .search {
+    background-color: $third-color;
+  }
+
   input {
     height: 36px;
-
-    &::placeholder {
-      text-align: center;
-    }
+    text-align: center;
   }
 } // end of the form
+.donation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  a {
+    margin: 0;
+    padding: 0;
+
+    i {
+      font-size: 2em;
+      color: $secondary-color;
+    }
+
+    span {
+      color: $principal-color;
+    }
+  }
+} // end of .donation
 
 .adds-container {
   display: flex;
@@ -224,8 +270,6 @@ form {
     font-size: 2em;
   }
 
-  
-
   h3 {
     padding: 0.5em;
   }
@@ -234,33 +278,34 @@ form {
     margin: 2em;
   }
 
-  .buttons{
+  .buttons {
     margin: 1em auto;
   }
+
   .img-adds {
     position: relative;
+
     img {
-    width: 200px;
-    margin: 0 0.5em;
-  } 
+      width: 200px;
+      margin: 0 0.5em;
+    }
+
     .icons-image {
       position: absolute;
       margin: 0;
       right: 0;
       bottom: 0;
       background-color: $third-color;
-      
-       i {
-         margin: 0 0.5em;
-         color: $principal-color;
-         font-size: 1em;
-         display: inline-flex;
-         justify-content: center;
-       }
+
+      i {
+        margin: 0 0.5em;
+        color: $principal-color;
+        font-size: 1em;
+        display: inline-flex;
+        justify-content: center;
+      }
     }
   }
- 
-
 } // end adds-container
 
 .fas-l {
@@ -275,50 +320,12 @@ form {
   border-radius: 50%;
   color: $principal-color;
 
-  
-&:hover {
-  transform: scale(1.5);
-  border: 2px solid $secondary-color;
-}
-      
-}
-
-.dogs-cats {
-    .columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-        div {
-          margin: 1em;
-        }
-    }
-
-    .item {
-      background-color: lighten($secondary-color, 70%);
-      padding: 1em;
-      border: 2px solid lighten($secondary-color, 30%);
-      border-radius: 5px;
-      a {
-        margin: 0;
-        padding: 0;
-        
-      }
-      img {
-        width: 100%;
-        height: 200px;
-
-        &:hover {
-          transform: scale(1.5);
-        }
-      }
-    }
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-    margin-left: 1em;
+  &:hover {
+    transform: scale(1.5);
+    border: 2px solid $secondary-color;
   }
 }
+
 .middle {
   display: flex;
   align-items: center;
@@ -332,6 +339,7 @@ form {
   p {
     color: $secondary-color;
     margin-top: 1em;
+
     a {
       padding: 0;
       margin: 0;
@@ -341,22 +349,43 @@ form {
   }
 } // end of .middle
 
-.donation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  a {
-    margin: 0;
-    padding: 0;
-    i{
-      font-size: 2em;
-      color: $secondary-color;
+.dogs-cats {
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    div {
+      margin: 1em;
     }
-    span {
-      color: $principal-color;
+  }
+
+  .item {
+    background-color: lighten($secondary-color, 70%);
+    padding: 1em;
+    border: 2px solid lighten($secondary-color, 30%);
+    border-radius: 5px;
+
+    a {
+      margin: 0;
+      padding: 0;
     }
+
+    img {
+      width: 100%;
+      max-height: 160px;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin-left: 1em;
   }
 }
 

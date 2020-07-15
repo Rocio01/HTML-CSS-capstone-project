@@ -1,5 +1,4 @@
 @media screen and (max-width: 767px) {
-
   nav {
     padding: 0;
     justify-content: space-evenly;
@@ -30,18 +29,35 @@
             }
           }
         }
-
-
       }  // end of the ul
     } // end of the nav-left
   } // end of the nav
 
-
-
   .principal {
     display: none;
   }
+
   .hot-adds {
     display: none;
   }
-}
+
+  .dogs-cats {
+    width: fit-content;
+
+    a {
+      margin: 0;
+      padding: 0;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+      padding: 0;
+    }
+
+    .fas-l {
+      display: none;
+    }
+  }
+} // end of media-query
