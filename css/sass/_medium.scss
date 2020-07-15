@@ -1,0 +1,30 @@
+@media screen and (max-width: 1023px) {
+  main {
+    padding: 0;
+  }
+  .nav-right {
+    display: none;
+  }
+
+  .dogs-cats {
+    width: fit-content;
+  
+    a {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .fas-l {
+      display: none;
+    }
+  }
+
+  
+}// end of 1023px

@@ -102,6 +102,10 @@ body {
   font-family: font80831, font114505, font95905, Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+main {
+  padding: 0 10%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -130,6 +134,7 @@ footer div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2% 0;
 }
 
 footer ul {
@@ -139,12 +144,15 @@ footer ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 footer ul i {
-  margin: 1em;
   color: #888;
+}
+
+footer ul li {
+  padding: 10%;
 }
 
 nav {
@@ -160,6 +168,14 @@ nav {
 
 nav .nav-left {
   margin-top: 4px;
+}
+
+nav .nav-left li i {
+  margin: auto 1%;
+}
+
+nav .nav-left li span {
+  margin: auto 10px;
 }
 
 nav a {
@@ -182,7 +198,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: auto 1rem;
+  margin: auto 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,18 +208,13 @@ nav ul li {
   padding: 5px;
 }
 
-nav ul li i,
-nav ul li img {
-  margin: auto 0.5em;
-}
-
 nav ul li img {
   max-width: 50px;
   border-radius: 50%;
   border: 1px solid #888;
 }
 
-.principal {
+.top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,12 +229,12 @@ nav ul li img {
       -ms-flex-align: center;
           align-items: center;
   background-color: #d35266;
-  padding: 3rem;
   color: #eeeeee;
   position: relative;
+  padding: 1.5em 0;
 }
 
-.principal::after {
+.top::after {
   content: "\f1b0";
   font-family: FontAwesome;
   font-style: normal;
@@ -236,12 +247,12 @@ nav ul li img {
   left: 130px;
 }
 
-.principal h1 {
+.top h1 {
   font-size: 3em;
   margin-bottom: 0;
 }
 
-.principal h4 {
+.top h4 {
   font-size: 1em;
   margin: 1em;
 }
@@ -261,7 +272,6 @@ form {
 form select {
   height: 36px;
   color: #888;
-  padding: 0 1em;
 }
 
 form .search {
@@ -283,13 +293,7 @@ form input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.donation a {
-  margin: 0;
-  padding: 0;
+  margin-left: 7px;
 }
 
 .donation a i {
@@ -314,6 +318,7 @@ form input {
   margin: 3em;
   color: #888;
   background-color: white;
+  margin: auto 1%;
 }
 
 .adds-container h4 {
@@ -322,25 +327,21 @@ form input {
   font-size: 2em;
 }
 
-.adds-container h3 {
-  padding: 0.5em;
-}
-
-.adds-container div {
-  margin: 2em;
-}
-
 .adds-container .buttons {
   margin: 1em auto;
 }
 
 .adds-container .img-adds {
   position: relative;
+  margin: 2%;
+}
+
+.adds-container .img-adds h3 {
+  margin: 9% auto;
 }
 
 .adds-container .img-adds img {
   width: 200px;
-  margin: 0 0.5em;
 }
 
 .adds-container .img-adds .icons-image {
@@ -352,7 +353,6 @@ form input {
 }
 
 .adds-container .img-adds .icons-image i {
-  margin: 0 0.5em;
   color: #d35266;
   font-size: 1em;
   display: -webkit-inline-box;
@@ -374,12 +374,12 @@ form input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 25px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   color: #d35266;
+  margin: 1%;
 }
 
 .fas-l:hover {
@@ -400,14 +400,8 @@ form input {
           justify-content: center;
 }
 
-.middle a {
-  padding: 1em;
-  margin: auto 1em;
-}
-
 .middle p {
   color: #888;
-  margin-top: 1em;
 }
 
 .middle p a {
@@ -417,6 +411,20 @@ form input {
   font-weight: 600;
 }
 
+.dogs-cats {
+  margin: 1em 2%;
+}
+
+.dogs-cats .fas-m {
+  color: #d35266;
+  font-size: 1.2em;
+}
+
+.dogs-cats .fas-m:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 .dogs-cats .columns {
   display: -ms-grid;
   display: grid;
@@ -424,30 +432,29 @@ form input {
       grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.dogs-cats .columns div {
-  margin: 1em;
-}
-
 .dogs-cats .item {
   background-color: white;
   padding: 1em;
   border: 2px solid #d5d5d5;
   border-radius: 5px;
+  margin: 3%;
 }
 
 .dogs-cats .item a {
-  margin: 0;
-  padding: 0;
+  padding: 1%;
+}
+
+.dogs-cats .item p {
+  padding: 2%;
 }
 
 .dogs-cats .item img {
   width: 100%;
-  max-height: 160px;
 }
 
 .dogs-cats .item img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .dogs-cats ul {
@@ -461,7 +468,14 @@ form input {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  margin-left: 1em;
+}
+
+.dogs-cats ul:first-child a {
+  color: #383838;
+}
+
+.puppies {
+  color: #383838;
 }
 
 button {
@@ -476,6 +490,35 @@ button {
 button:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
+}
+
+@media screen and (max-width: 1023px) {
+  main {
+    padding: 0;
+  }
+  .nav-right {
+    display: none;
+  }
+  .dogs-cats {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .dogs-cats a {
+    margin: 0;
+    padding: 0;
+  }
+  .dogs-cats .columns {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+  }
+  .dogs-cats .fas-l {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -514,7 +557,7 @@ button:hover {
   nav .nav-left ul li:nth-child(1) span {
     display: none;
   }
-  .principal {
+  .top {
     display: none;
   }
   .hot-adds {
@@ -525,26 +568,40 @@ button:hover {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .dogs-cats a {
-    margin: 0;
-    padding: 0;
-  }
   .dogs-cats .columns {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    margin: 0;
-    padding: 0;
   }
   .dogs-cats .fas-l {
     display: none;
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .nav-right {
+@media screen and (max-width: 425px) {
+  .ages {
     display: none;
+  }
+  .dogs-cats {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .dogs-cats .columns {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .dogs-cats .fas-l {
+    display: none;
+  }
+  #home {
+    display: none;
+  }
+  footer ul li {
+    padding: 2%;
   }
 }
 /*# sourceMappingURL=style.css.map */

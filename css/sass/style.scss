@@ -103,6 +103,10 @@ body {
   font-family: $font-stack;
 }
 
+main {
+  padding: 0 10%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -118,22 +122,26 @@ a {
 footer {
   text-align: center;
   font-size: 100%;
+  
 
   div {
     background-color: $third-color;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding:  2% 0;
   }
 
   ul {
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    font-size: 1.5em;
 
     i {
-      margin: 1em;
       color: $secondary-color;
+    }
+    li {
+      padding: 10%;
     }
   }
 }
@@ -146,6 +154,14 @@ nav {
 
   .nav-left {
     margin-top: 4px;
+    li {
+      i {
+        margin: auto 1%;
+      }
+      span {
+        margin: auto 10px;
+      }
+    }
   }
 
   a {
@@ -161,15 +177,11 @@ nav {
     margin: 0;
 
     li {
-      margin: auto 1rem;
+      margin: auto 1em;
       display: flex;
       align-items: center;
       padding: 5px;
 
-      i,
-      img {
-        margin: auto 0.5em;
-      }
 
       img {
         max-width: 50px;
@@ -180,15 +192,15 @@ nav {
   }
 }
 
-.principal {
+.top {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: $principal-color;
-  padding: 3rem;
   color: lighten($secondary-color, 40%);
   position: relative;
+  padding: 1.5em 0;
 
   &::after {
     content: "\f1b0";
@@ -222,7 +234,6 @@ form {
   select {
     height: 36px;
     color: $secondary-color;
-    padding: 0 1em;
   }
 
   .search {
@@ -234,16 +245,14 @@ form {
     text-align: center;
   }
 } // end of the form
+
 .donation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  margin-left: 7px;
 
   a {
-    margin: 0;
-    padding: 0;
 
     i {
       font-size: 2em;
@@ -263,6 +272,7 @@ form {
   margin: 3em;
   color: $secondary-color;
   background-color: lighten($secondary-color, 70%);
+  margin: auto 1%;
 
   h4 {
     color: $principal-color;
@@ -270,13 +280,7 @@ form {
     font-size: 2em;
   }
 
-  h3 {
-    padding: 0.5em;
-  }
-
-  div {
-    margin: 2em;
-  }
+  
 
   .buttons {
     margin: 1em auto;
@@ -284,10 +288,14 @@ form {
 
   .img-adds {
     position: relative;
+    margin: 2%;
+
+    h3 {
+      margin: 9% auto;
+    }
 
     img {
-      width: 200px;
-      margin: 0 0.5em;
+     width: 200px;
     }
 
     .icons-image {
@@ -298,7 +306,6 @@ form {
       background-color: $third-color;
 
       i {
-        margin: 0 0.5em;
         color: $principal-color;
         font-size: 1em;
         display: inline-flex;
@@ -313,12 +320,12 @@ form {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   color: $principal-color;
+  margin: 1%;
 
   &:hover {
     transform: scale(1.5);
@@ -331,14 +338,10 @@ form {
   align-items: center;
   justify-content: center;
 
-  a {
-    padding: 1em;
-    margin: auto 1em;
-  }
 
   p {
     color: $secondary-color;
-    margin-top: 1em;
+    
 
     a {
       padding: 0;
@@ -350,13 +353,20 @@ form {
 } // end of .middle
 
 .dogs-cats {
+margin: 1em 2%;
+
+.fas-m {
+  color: $principal-color;
+  font-size: 1.2em;
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
   .columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    div {
-      margin: 1em;
-    }
   }
 
   .item {
@@ -364,18 +374,22 @@ form {
     padding: 1em;
     border: 2px solid lighten($secondary-color, 30%);
     border-radius: 5px;
+    margin: 3%;
 
     a {
-      margin: 0;
-      padding: 0;
+      padding: 1%;
+    }
+
+    p {
+      padding: 2%;
     }
 
     img {
       width: 100%;
-      max-height: 160px;
+    
 
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
       }
     }
   }
@@ -385,10 +399,18 @@ form {
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
-    margin-left: 1em;
+
+    &:first-child {
+      a {
+        color:$third-color;
+      }
+    }
   }
+}
+.puppies {
+  color:$third-color;
 }
 
 @import "buttons";
-@import "mobile";
-@import "tablet";
+@import "medium";
+@import "small";

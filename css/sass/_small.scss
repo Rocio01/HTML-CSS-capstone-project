@@ -33,7 +33,7 @@
     } // end of the nav-left
   } // end of the nav
 
-  .principal {
+  .top {
     display: none;
   }
 
@@ -44,20 +44,48 @@
   .dogs-cats {
     width: fit-content;
 
-    a {
-      margin: 0;
-      padding: 0;
-    }
 
     .columns {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin: 0;
-      padding: 0;
+      
     }
 
     .fas-l {
       display: none;
     }
   }
-} // end of media-query
+} // end of 768px
+
+@media screen and (max-width: 425px) {
+  .ages {
+    display: none;
+  }
+  .dogs-cats {
+    width: fit-content;
+
+
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr;
+      
+    }
+
+    .fas-l {
+      display: none;
+    }
+  }
+  #home {
+    display: none;
+  }
+
+  footer {
+    ul {
+      li {
+      padding: 2%;
+    } 
+    }
+   
+  }
+
+} // end of 425px
