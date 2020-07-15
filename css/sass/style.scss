@@ -400,15 +400,12 @@ margin: 1em 2%;
     align-items: center;
     width: 50%;
 
-    &:first-child {
+    &:nth-child(2) {
       a {
         color:$third-color;
       }
     }
   }
-}
-.puppies {
-  color:$third-color;
 }
 
 @import "buttons";

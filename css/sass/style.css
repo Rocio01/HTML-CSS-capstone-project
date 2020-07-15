@@ -470,11 +470,7 @@ form input {
   width: 50%;
 }
 
-.dogs-cats ul:first-child a {
-  color: #383838;
-}
-
-.puppies {
+.dogs-cats ul:nth-child(2) a {
   color: #383838;
 }
 
