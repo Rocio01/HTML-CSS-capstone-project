@@ -44,11 +44,9 @@
   .dogs-cats {
     width: fit-content;
 
-
     .columns {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      
     }
 
     .fas-l {
@@ -61,20 +59,20 @@
   .ages {
     display: none;
   }
+
   .dogs-cats {
     width: fit-content;
-
 
     .columns {
       display: grid;
       grid-template-columns: 1fr;
-      
     }
 
     .fas-l {
       display: none;
     }
   }
+
   #home {
     display: none;
   }
@@ -82,10 +80,8 @@
   footer {
     ul {
       li {
-      padding: 2%;
-    } 
+        padding: 2%;
+      }
     }
-   
   }
-
 } // end of 425px

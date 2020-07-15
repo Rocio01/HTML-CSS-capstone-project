@@ -122,14 +122,13 @@ a {
 footer {
   text-align: center;
   font-size: 100%;
-  
 
   div {
     background-color: $third-color;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:  2% 0;
+    padding: 2% 0;
   }
 
   ul {
@@ -140,34 +139,36 @@ footer {
     i {
       color: $secondary-color;
     }
+
     li {
       padding: 10%;
     }
   }
 }
 
+.donation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 7px;
+
+  i {
+    font-size: 2em;
+    color: lighten($secondary-color, 30);
+  }
+
+  span {
+    color: $principal-color;
+  }
+}
+
+// end of .donation
+
 nav {
   display: flex;
   justify-content: space-between;
   padding: 0 3rem;
   background-color: $third-color;
-
-  .nav-left {
-    margin-top: 4px;
-    li {
-      i {
-        margin: auto 1%;
-      }
-      span {
-        margin: auto 10px;
-      }
-    }
-  }
-
-  a {
-    color: $secondary-color;
-    font-weight: 600;
-  }
 
   ul {
     display: flex;
@@ -182,13 +183,31 @@ nav {
       align-items: center;
       padding: 5px;
 
-
       img {
         max-width: 50px;
         border-radius: 50%;
         border: 1px solid $secondary-color;
       }
     }
+  }
+
+  .nav-left {
+    margin-top: 4px;
+
+    li {
+      i {
+        margin: auto 1%;
+      }
+
+      span {
+        margin: auto 10px;
+      }
+    }
+  }
+
+  a {
+    color: $secondary-color;
+    font-weight: 600;
   }
 }
 
@@ -204,7 +223,7 @@ nav {
 
   &::after {
     content: "\f1b0";
-    font-family: FontAwesome;
+    font-family: FontAwesome, sans-serif;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
@@ -244,32 +263,14 @@ form {
     height: 36px;
     text-align: center;
   }
-} // end of the form
+}
 
-.donation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 7px;
-
-  a {
-
-    i {
-      font-size: 2em;
-      color: $secondary-color;
-    }
-
-    span {
-      color: $principal-color;
-    }
-  }
-} // end of .donation
+// end of the form
 
 .adds-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 3em;
   color: $secondary-color;
   background-color: lighten($secondary-color, 70%);
   margin: auto 1%;
@@ -279,8 +280,6 @@ form {
     padding-bottom: 0.5em;
     font-size: 2em;
   }
-
-  
 
   .buttons {
     margin: 1em auto;
@@ -295,7 +294,7 @@ form {
     }
 
     img {
-     width: 200px;
+      width: 200px;
     }
 
     .icons-image {
@@ -313,7 +312,9 @@ form {
       }
     }
   }
-} // end adds-container
+}
+
+// end adds-container
 
 .fas-l {
   background-color: lighten($secondary-color, 37%);
@@ -341,7 +342,6 @@ form {
 
   p {
     color: $secondary-color;
-    
 
     a {
       padding: 0;
@@ -350,23 +350,27 @@ form {
       font-weight: 600;
     }
   }
-} // end of .middle
+}
+
+// end of .middle
 
 .dogs-cats {
-margin: 1em 2%;
+  margin: 2em 2%;
 
-.fas-m {
-  color: $principal-color;
-  font-size: 1.2em;
-  &:hover {
-    transform: scale(1.5);
+  .fas-m {
+    color: $principal-color;
+    font-size: 1.2em;
+
+    &:hover {
+      transform: scale(1.5);
+    }
   }
-}
 
   .columns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
+    border-top: 2px solid lighten($secondary-color, 30);
+    margin: 2% auto;
   }
 
   .item {
@@ -374,7 +378,7 @@ margin: 1em 2%;
     padding: 1em;
     border: 2px solid lighten($secondary-color, 30%);
     border-radius: 5px;
-    margin: 3%;
+    margin: 5% 3%;
 
     a {
       padding: 1%;
@@ -386,7 +390,6 @@ margin: 1em 2%;
 
     img {
       width: 100%;
-    
 
       &:hover {
         transform: scale(1.1);
@@ -402,11 +405,12 @@ margin: 1em 2%;
 
     &:nth-child(2) {
       a {
-        color:$third-color;
+        color: $third-color;
       }
     }
   }
 }
+// end of .dogs-cats
 
 @import "buttons";
 @import "medium";
