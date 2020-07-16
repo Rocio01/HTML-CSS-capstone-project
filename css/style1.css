@@ -95,3 +95,248 @@ video {
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #eee;
+  font-family: font80831, font114505, font95905, helvetica, arial, "Lucida Grande", sans-serif;
+  color: #888;
+}
+
+main {
+  padding: 0 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h6 {
+  display: none;
+}
+
+b {
+  color: #383838;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #d35266;
+
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 3rem;
+  background-color: #383838;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  background-color: #383838;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: auto 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px;
+}
+
+nav .nav-left {
+  margin-top: 4px;
+}
+
+nav .nav-left li i {
+  margin: auto 1%;
+}
+
+nav .nav-left li span {
+  margin: auto 10px;
+}
+
+nav a {
+  color: #888;
+  font-weight: 600;
+}
+
+button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 25px;
+  margin: 3px;
+  background-color: #d35266;
+  color: #d5d5d5;
+}
+
+button:hover {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.img-one {
+  width: 90%;
+}
+.text {
+  width: 100%;
+  height: fit-content;
+}
+
+h5 a {
+  color: #d35266;
+}
+
+.icons-image {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #383838;
+}
+
+.border-solid {
+  border: 1px solid #d5d5d5;
+}
+
+
+.age-container {
+  height: fit-content;
+}
+
+.text-img {
+  border-bottom: 2px solid #d5d5d5;
+}
+
+.text-img:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+.top {
+ 
+  display: flex;
+  
+  flex-direction: column;
+  flex-grow: 3;
+  align-items: center;
+  background-color: #d35266;
+  color: #eee;
+  position: relative;
+  padding: 1.5em 0;
+  text-align: left;
+}
+.top::after {
+  content: "\f1b0";
+  font-family: FontAwesome, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  font-size: 150px;
+  color: rgba(56, 56, 56, 0.3);
+  top: -35px;
+  left: 150px;
+}
+
+form input, form select {
+  height: 36px;
+  text-align: center;
+  color: #d5d5d5 ;
+  font-size: 0.8em;
+
+}
+
+::placeholder {
+  color: #d5d5d5;
+}
+
+form button {
+  background-color: #383838;
+}
+
+h1 {
+  font-size: 2em;
+}
+footer {
+  text-align: center;
+  font-size: 100%;
+}
+
+footer div {
+  background-color: #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2% 0;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+footer ul i {
+  color: #888;
+}
+
+footer ul li {
+  padding: 10%;
+}
+
+@media screen and (max-width: 768px) {
+
+
+.top {
+  display: none;
+}
+
+
+}
+
+@media screen and (max-width: 576px) {
+ 
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wamg-one {
+    display: none;
+  }
+ 
+}
+
+@media screen and (max-width: 425px) {
+ 
+  footer ul li {
+    padding: 2%;
+  }
+}
