@@ -36,6 +36,9 @@ In this task I was required to create a responsive page using the best practices
 
 [Live Demo Link Search page](https://raw.githack.com/Rocio01/HTML-CSS-capstone-project/feature-branch/index1.html)
 
+## Video Presentation
+[Video Presentation link](https://www.loom.com/share/bf437b359ba54a4981d6d9d4307081bc)
+
 ### Prerequisites
 
 - Browser (Google Chrome, Mozilla Firefox, Safari or any other browser)
