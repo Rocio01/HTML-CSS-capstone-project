@@ -236,6 +236,10 @@ nav a {
   font-weight: 600;
 }
 
+a:hover {
+  color: #d35266;
+}
+
 .top {
   display: -webkit-box;
   display: -ms-flexbox;
