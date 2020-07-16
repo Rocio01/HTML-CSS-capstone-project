@@ -117,12 +117,22 @@ h6 {
 b {
   color: #383838;
 }
+
 a {
   text-decoration: none;
 }
+
+nav a {
+  color: #888;
+  font-weight: 600;
+}
+
+h5 a {
+  color: #d35266;
+}
+
 a:hover {
   color: #d35266;
-
 }
 
 nav {
@@ -165,17 +175,16 @@ nav .nav-left {
   margin-top: 4px;
 }
 
+footer ul i {
+  color: #888;
+}
+
 nav .nav-left li i {
   margin: auto 1%;
 }
 
 nav .nav-left li span {
   margin: auto 10px;
-}
-
-nav a {
-  color: #888;
-  font-weight: 600;
 }
 
 button {
@@ -187,6 +196,10 @@ button {
   color: #d5d5d5;
 }
 
+form button {
+  background-color: #383838;
+}
+
 button:hover {
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
@@ -195,13 +208,10 @@ button:hover {
 .img-one {
   width: 90%;
 }
+
 .text {
   width: 100%;
   height: fit-content;
-}
-
-h5 a {
-  color: #d35266;
 }
 
 .icons-image {
@@ -216,7 +226,6 @@ h5 a {
   border: 1px solid #d5d5d5;
 }
 
-
 .age-container {
   height: fit-content;
 }
@@ -229,10 +238,9 @@ h5 a {
   background-color: white;
   transform: scale(1.05);
 }
+
 .top {
- 
   display: flex;
-  
   flex-direction: column;
   flex-grow: 3;
   align-items: center;
@@ -242,6 +250,7 @@ h5 a {
   padding: 1.5em 0;
   text-align: left;
 }
+
 .top::after {
   content: "\f1b0";
   font-family: FontAwesome, sans-serif;
@@ -255,25 +264,22 @@ h5 a {
   left: 150px;
 }
 
-form input, form select {
+form input,
+form select {
   height: 36px;
   text-align: center;
-  color: #d5d5d5 ;
+  color: #d5d5d5;
   font-size: 0.8em;
-
 }
 
 ::placeholder {
   color: #d5d5d5;
 }
 
-form button {
-  background-color: #383838;
-}
-
 h1 {
   font-size: 2em;
 }
+
 footer {
   text-align: center;
   font-size: 100%;
@@ -303,39 +309,29 @@ footer ul {
   font-size: 1.5em;
 }
 
-footer ul i {
-  color: #888;
-}
-
 footer ul li {
   padding: 10%;
 }
 
 @media screen and (max-width: 768px) {
-
-
-.top {
-  display: none;
-}
-
-
+  .top {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
- 
-  nav ul{
+  nav ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
   .wamg-one {
     display: none;
   }
- 
 }
 
 @media screen and (max-width: 425px) {
- 
   footer ul li {
     padding: 2%;
   }
