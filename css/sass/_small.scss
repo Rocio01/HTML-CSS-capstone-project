@@ -65,10 +65,10 @@
 
     .columns {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
 
-    .fas-l {
+    .fas-l, .fas-m {
       display: none;
     }
   }
