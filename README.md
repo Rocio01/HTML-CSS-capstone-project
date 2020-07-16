@@ -32,7 +32,8 @@ In this task I was required to create a responsive page using the best practices
 
 ## Live Demo
 
-[Live Demo Link Adopt page](https://raw.githack.com/Rocio01/HTML-CSS-capstone-project/feature-branch/index.html)
+[Live Demo Link Adopt page](https://raw.githack.com/Rocio01/HTML-CSS-capstone-project/feature-branch/index.html) 
+
 [Live Demo Link Search page](https://raw.githack.com/Rocio01/HTML-CSS-capstone-project/feature-branch/index1.html)
 
 ### Prerequisites
