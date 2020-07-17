@@ -175,7 +175,8 @@ nav .nav-left {
   margin-top: 4px;
 }
 
-footer ul i {
+footer a i,
+footer .rc {
   color: #888;
 }
 
@@ -230,10 +231,6 @@ button:hover {
   height: fit-content;
 }
 
-.text-img {
-  border-bottom: 2px solid #d5d5d5;
-}
-
 .text-img:hover {
   background-color: white;
   transform: scale(1.05);
@@ -282,44 +279,67 @@ h1 {
 
 footer {
   text-align: center;
-  font-size: 100%;
-}
-
-footer div {
-  background-color: #383838;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 2% 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: white;
+  color: #888;
+  padding: 1%;
+  width: 100%;
+}
+
+footer h5,
+footer div {
+  padding: 2%;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 1.5em;
 }
 
-footer ul li {
-  padding: 10%;
+.icon-l {
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 1023px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .top {
     display: none;
   }
+
+  .sm-c {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
   nav ul {
     display: flex;
     flex-direction: column;
@@ -332,7 +352,7 @@ footer ul li {
 }
 
 @media screen and (max-width: 425px) {
-  footer ul li {
-    padding: 2%;
+  .icon-l {
+    margin-right: 3px;
   }
 }
