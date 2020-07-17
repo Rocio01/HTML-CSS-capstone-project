@@ -111,7 +111,8 @@ ul {
   list-style-type: none;
 }
 
-h6 {
+h6,
+.large {
   display: none;
 }
 
@@ -176,38 +177,39 @@ nav {
     background-color: $third-color;
     align-items: center;
     margin: 0;
-
-    li {
-      margin: auto 1em;
-      display: flex;
-      align-items: center;
-      padding: 5px;
-
-      img {
-        max-width: 50px;
-        border-radius: 50%;
-        border: 1px solid $secondary-color;
-      }
-    }
   }
 
-  .nav-left {
-    margin-top: 4px;
-
-    li {
-      i {
-        margin: auto 1%;
-      }
-
-      span {
-        margin: auto 10px;
-      }
-    }
+  li {
+    margin: auto 1em;
+    display: flex;
+    align-items: center;
+    padding: 5px;
   }
+
+  img {
+    max-width: 50px;
+    border-radius: 50%;
+    border: 1px solid $secondary-color;
+  }
+
+
 
   a {
     color: $secondary-color;
     font-weight: 600;
+  }
+}
+
+.nav-left {
+  margin-top: 4px;
+
+
+  i {
+    margin: auto 1%;
+  }
+
+  span {
+    margin: auto 10px;
   }
 }
 
@@ -253,23 +255,21 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  select {
-    height: 36px;
-    color: $secondary-color;
-  }
-
-  .search {
-    background-color: $third-color;
-  }
-
-  input {
-    height: 36px;
-    text-align: center;
-  }
 }
 
-// end of the form
+select {
+  height: 36px;
+  color: $secondary-color;
+}
+
+input {
+  height: 36px;
+  text-align: center;
+}
+
+.search {
+  background-color: $third-color;
+}
 
 .adds-container {
   display: flex;
@@ -284,41 +284,38 @@ form {
     padding-bottom: 0.5em;
     font-size: 2em;
   }
+} // end adds-container
+.buttons {
+  margin: 1em auto;
+}
 
-  .buttons {
-    margin: 1em auto;
+.img-adds {
+  position: relative;
+  margin: 2%;
+
+  h3 {
+    margin: 9% auto;
   }
 
-  .img-adds {
-    position: relative;
-    margin: 2%;
+  img {
+    width: 200px;
+  }
 
-    h3 {
-      margin: 9% auto;
-    }
+  .icons-image {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $third-color;
 
-    img {
-      width: 200px;
-    }
-
-    .icons-image {
-      position: absolute;
-      margin: 0;
-      right: 0;
-      bottom: 0;
-      background-color: $third-color;
-
-      i {
-        color: $principal-color;
-        font-size: 1em;
-        display: inline-flex;
-        justify-content: center;
-      }
+    i {
+      color: $principal-color;
+      font-size: 1em;
+      display: inline-flex;
+      justify-content: center;
     }
   }
 }
-
-// end adds-container
 
 .fas-l {
   background-color: lighten($secondary-color, 37%);
@@ -360,46 +357,6 @@ form {
 .dogs-cats {
   margin: 2em 2%;
 
-  .fas-m {
-    color: $principal-color;
-    font-size: 1.2em;
-
-    &:hover {
-      transform: scale(1.5);
-    }
-  }
-
-  .columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    border-top: 2px solid lighten($secondary-color, 30);
-    margin: 2% auto;
-  }
-
-  .item {
-    background-color: lighten($secondary-color, 70%);
-    padding: 1em;
-    border: 2px solid lighten($secondary-color, 30%);
-    border-radius: 5px;
-    margin: 5% 3%;
-
-    a {
-      padding: 1%;
-    }
-
-    p {
-      padding: 2%;
-    }
-
-    img {
-      width: 100%;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-  }
-
   ul {
     display: flex;
     justify-content: space-evenly;
@@ -414,6 +371,46 @@ form {
   }
 }
 // end of .dogs-cats
+
+.fas-m {
+  color: $principal-color;
+  font-size: 1.2em;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-top: 2px solid lighten($secondary-color, 30);
+  margin: 2% auto;
+}
+
+.item {
+  background-color: lighten($secondary-color, 70%);
+  padding: 1em;
+  border: 2px solid lighten($secondary-color, 30%);
+  border-radius: 5px;
+  margin: 5% 3%;
+
+  a {
+    padding: 1%;
+  }
+
+  p {
+    padding: 2%;
+  }
+
+  img {
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
 
 @import "buttons";
 @import "medium";

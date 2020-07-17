@@ -14,16 +14,13 @@
       margin: 0;
       padding: 0;
     }
+  }
 
-    .columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin: 0;
-      padding: 0;
-    }
+  .medium {
+    display: none;
+  }
 
-    .fas-l {
-      display: none;
-    }
+  .large {
+    display: contents;
   }
 }// end of 1023px
