@@ -122,29 +122,37 @@ a {
 
 footer {
   text-align: center;
-  font-size: 100%;
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: lighten($secondary-color, 50%);
+  color: $secondary-color;
+  padding: 1%;
+  width: 100%;
+
+  h5,
+  div {
+    padding: 2%;
+  }
+
+  a i,
+  .rc {
+    color: $secondary-color;
+  }
 
   div {
-    background-color: $third-color;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2% 0;
+    flex-wrap: wrap;
   }
 
   ul {
     display: flex;
-    justify-content: center;
-    font-size: 1.5em;
-
-    i {
-      color: $secondary-color;
-    }
-
-    li {
-      padding: 10%;
-    }
   }
+}
+
+.icon-l {
+  margin-right: 1em;
 }
 
 .donation {
@@ -192,8 +200,6 @@ nav {
     border: 1px solid $secondary-color;
   }
 
-
-
   a {
     color: $secondary-color;
     font-weight: 600;
@@ -202,7 +208,6 @@ nav {
 
 .nav-left {
   margin-top: 4px;
-
 
   i {
     margin: auto 1%;
@@ -289,6 +294,11 @@ input {
   margin: 1em auto;
 }
 
+.mb,
+.d-tittle i {
+  margin-bottom: 0.5em;
+}
+
 .img-adds {
   position: relative;
   margin: 2%;
@@ -335,6 +345,39 @@ input {
   }
 }
 
+.item {
+  background-color: lighten($secondary-color, 70%);
+  padding: 1em;
+  border: 2px solid lighten($secondary-color, 30%);
+  border-radius: 5px;
+  margin: 5% 3%;
+
+  a {
+    padding: 1%;
+  }
+
+  p {
+    padding: 2%;
+  }
+
+  img {
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.lists {
+  display: flex;
+  margin: 1em 0;
+
+  a {
+    color: $secondary-color;
+  }
+}
+
 .middle {
   display: flex;
   align-items: center;
@@ -353,6 +396,10 @@ input {
 }
 
 // end of .middle
+.lists ul,
+.categories {
+  padding-right: 1em;
+}
 
 .dogs-cats {
   margin: 2em 2%;
@@ -388,28 +435,30 @@ input {
   margin: 2% auto;
 }
 
-.item {
-  background-color: lighten($secondary-color, 70%);
-  padding: 1em;
-  border: 2px solid lighten($secondary-color, 30%);
-  border-radius: 5px;
-  margin: 5% 3%;
+.down {
+  display: flex;
+  justify-content: space-evenly;
+  color: $secondary-color;
+  background-color: lighten($secondary-color, 50%);
+  padding: 5%;
+  border-bottom: 3px solid lighten($secondary-color, 30%);
+}
 
-  a {
-    padding: 1%;
-  }
+.puppies:hover {
+  color: $principal-color;
+}
 
-  p {
-    padding: 2%;
-  }
+.down-info h2 {
+  color: $secondary-color;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 2em;
+}
 
-  img {
-    width: 100%;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+.down-list h2 {
+  color: $principal-color;
+  border-bottom: 2px solid $principal-color;
+  padding-bottom: 0.5em;
 }
 
 @import "buttons";
