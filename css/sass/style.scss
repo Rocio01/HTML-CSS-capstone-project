@@ -177,12 +177,11 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 0 3%;
-  background-color: $third-color;
+
 
   ul {
     display: flex;
     justify-content: space-evenly;
-    background-color: $third-color;
     align-items: center;
     margin: 0;
   }
@@ -204,6 +203,10 @@ nav {
     color: $secondary-color;
     font-weight: 600;
   }
+}
+
+.color-b {
+  background-color: $third-color;
 }
 
 .nav-left {
@@ -272,10 +275,6 @@ input {
   text-align: center;
 }
 
-.search {
-  background-color: $third-color;
-}
-
 .adds-container {
   display: flex;
   align-items: center;
@@ -316,7 +315,7 @@ input {
     margin: 0;
     right: 0;
     bottom: 0;
-    background-color: $third-color;
+
 
     i {
       color: $principal-color;

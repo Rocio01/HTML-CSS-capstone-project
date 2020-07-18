@@ -18,9 +18,9 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="color-b">
     <div class=" nav-left">
-      <ul>
+      <ul class="color-b">
         <li class="wamg-one">
           <a href="#"><img src="images/favicon_io/favicon-32x32.png" alt="icon"></a>
           <a href="#"> <span>WAMG</span></a>
@@ -57,7 +57,7 @@
         </select>
         <input type="text" placeholder="What kind of friend?">
         <input type="text" placeholder="Dog or cat">
-        <button class="search" type="button">Search</button>
+        <button class="search color-b" type="button">Search</button>
       </form>
     </div>
 
@@ -65,88 +65,93 @@
   <main>
     <div class="container pt-5">
       <div class="row">
-        <div class="input-container col-xs-12 col-sm-12  col-lg-3 d-flex flex-column my-2 ">
-          <div class=" border-solid inline p-3 ">
-            <div class="form-check-inline ">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input " value=""> Sponsor</label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input " value=""> Adopt</label>
-            </div>
-          </div> <!-- end of inline class -->
-          <div class="cat-dog sm-c p-3 border-solid">
-            <h3> Kind </h3>
+        <div class="input-container col-xs-12 col-sm-12  col-lg-3 d-flex flex-column my-2 f-container ">
+          <div>
 
-            <div class="form-check ">
-              <label class="form-check-label px-1">
-                <input type="checkbox" class="form-check-input" value=""> Cat
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label px-1">
-                <input type="checkbox" class="form-check-input" value=""> Dog
-              </label>
-            </div>
+            <div class=" border-solid inline p-3 ">
+              <div class="form-check-inline ">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input " value=""> Sponsor</label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input " value=""> Adopt</label>
+              </div>
+            </div> <!-- end of inline class -->
+            <div class="cat-dog sm-c p-3 border-solid">
+              <h3> Kind </h3>
+  
+              <div class="form-check  ">
+                <label class="form-check-label px-1">
+                  <input type="checkbox" class="form-check-input" value=""> Cat
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label px-1">
+                  <input type="checkbox" class="form-check-input" value=""> Dog
+                </label>
+              </div>
+  
+  
+            </div> <!-- end of cat-dog class -->
+            <div class="age sm-c p-3 border-solid ">
+              <h3> Ages </h3>
+  
+              <div class="form-check">
+                <label class="form-check-label px-1">
+                  <input type="checkbox" class="form-check-input" value=""> Puppies
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label px-1">
+                  <input type="checkbox" class="form-check-input" value=""> Adults
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label px-1">
+                  <input type="checkbox" class="form-check-input" value=""> Seniors
+                </label>
+              </div>
+  
+  
+  
+            </div> <!-- end of age class -->
+            <div class="donar sm-c p-3 border-solid ">
+              <h3> Donations </h3>
+  
+  
+              <div class="form-check">
+                <label class="form-check-label px-1">
+                  <input type="checkbox" class="form-check-input" value=""> $10
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label px-1">
+                  <input type="checkbox" class="form-check-input" value=""> $30
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label px-1">
+                  <input type="checkbox" class="form-check-input" value=""> $50
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label px-1">
+                  <input type="checkbox" class="form-check-input" value=""> <i class="fa fa-plus" aria-hidden="true"></i>
+                </label>
+              </div>
+  
+  
+            </div> <!-- end of donar class -->
 
-
-          </div> <!-- end of cat-dog class -->
-          <div class="age sm-c p-3 border-solid ">
-            <h3> Ages </h3>
-
-            <div class="form-check">
-              <label class="form-check-label px-1">
-                <input type="checkbox" class="form-check-input" value=""> Puppies
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label px-1">
-                <input type="checkbox" class="form-check-input" value=""> Adults
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label px-1">
-                <input type="checkbox" class="form-check-input" value=""> Seniors
-              </label>
-            </div>
-
-
-
-          </div> <!-- end of age class -->
-          <div class="donar sm-c p-3 border-solid">
-            <h3> Donations </h3>
-
-
-            <div class="form-check">
-              <label class="form-check-label px-1">
-                <input type="checkbox" class="form-check-input" value=""> $10
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label px-1">
-                <input type="checkbox" class="form-check-input" value=""> $30
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label px-1">
-                <input type="checkbox" class="form-check-input" value=""> $50
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label px-1">
-                <input type="checkbox" class="form-check-input" value=""> <i class="fa fa-plus" aria-hidden="true"></i>
-              </label>
-            </div>
-
-
-          </div> <!-- end of donar class -->
+          </div>  <!-- end of f-container -->
+          
 
         </div> <!-- end input-container -->
 
 
         <div class="age-container col-sm-12 col-lg-9">
-          <h3 class="p-3 ">Lorem ipsum dolor sit, amet consectetur
+          <h3 class="p-3 lorem ">Lorem ipsum dolor sit, amet consectetur
             adipisicing.</h3>
           <div class="text-img row pt-3 m-3 border-solid rounded-lg">
 
@@ -156,7 +161,7 @@
 
 
             <div class="text col-lg-6 col-md-6 col-sm-12">
-              <h5 class="py-2"><a href="#"> PUPPIES</a></h5>
+              <h5 class="pt-3 pb-1"><a href="#"> PUPPIES</a></h5>
               <p>
                 They are very cute and beautiful. We can enjoy their stages of growth and development
                 until we become adults; But all this requires a lot of effort, since they are babies
@@ -175,7 +180,7 @@
 
 
             <div class="text col-lg-6 col-md-6 col-sm-12">
-              <h5 class="py-2"><a href="#"> ADULTS</a></h5>
+              <h5 class="pt-3 pb-1"><a href="#"> ADULTS</a></h5>
               <p> An adult dog is easier to train, they adapt to basic orders, if they do
                 not have them acquired from before, it adapts perfectly to life with its new owners,
                 its habits and rules. <br><br><b>location:</b> Lorem, ipsum dolor.
@@ -193,7 +198,7 @@
 
 
             <div class="text col-lg-6 col-md-6 col-sm-12">
-              <h5 class="py-2"><a href="#"> SENIORS</a></h5>
+              <h5 class="pt-3 pb-1"><a href="#"> SENIORS</a></h5>
               <p>
                 The dog's old age is not a disease, it is just one
                 more stage in their lives, but adopting an elderly dog ​​can be an unforgettable
@@ -212,7 +217,7 @@
 
 
             <div class="text col-lg-6 col-md-6 col-sm-12">
-              <h5 class="py-1"><a href="#"> SPONSOR AN ANIMAL OR STERILIZATION</a></h5>
+              <h5 class="pt-3 pb-1"><a href="#"> SPONSOR AN ANIMAL OR STERILIZATION</a></h5>
               <p>
                 Sterilization is the best solution to avoid pet overpopulation
                 and unnecessary deaths. Animals deserve to be happy and respected!
