@@ -165,10 +165,6 @@ footer {
     font-size: 2em;
     color: lighten($secondary-color, 30);
   }
-
-  span {
-    color: $principal-color;
-  }
 }
 
 // end of .donation
@@ -177,7 +173,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 0 3%;
-
 
   ul {
     display: flex;
@@ -222,7 +217,7 @@ nav {
 }
 
 a:hover {
-  color: #d35266;
+  color: $principal-color;
 }
 
 .top {
@@ -284,7 +279,6 @@ input {
   margin: auto 1%;
 
   h4 {
-    color: $principal-color;
     padding-bottom: 0.5em;
     font-size: 2em;
   }
@@ -316,9 +310,7 @@ input {
     right: 0;
     bottom: 0;
 
-
     i {
-      color: $principal-color;
       font-size: 1em;
       display: inline-flex;
       justify-content: center;
@@ -335,7 +327,6 @@ input {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  color: $principal-color;
   margin: 1%;
 
   &:hover {
@@ -419,7 +410,6 @@ input {
 // end of .dogs-cats
 
 .fas-m {
-  color: $principal-color;
   font-size: 1.2em;
 
   &:hover {
@@ -455,9 +445,12 @@ input {
 }
 
 .down-list h2 {
-  color: $principal-color;
   border-bottom: 2px solid $principal-color;
   padding-bottom: 0.5em;
+}
+
+.color-p {
+  color: $principal-color;
 }
 
 @import "buttons";
