@@ -1,0 +1,463 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  vertical-align: baseline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "config";
+
+body {
+  background-color: lighten($secondary-color, 40%);
+  font-family: $font-stack;
+}
+
+main {
+  padding: 0 10%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h6,
+.large {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: lighten($secondary-color, 50%);
+  color: $secondary-color;
+  padding: 1%;
+  width: 100%;
+
+  h5,
+  div {
+    padding: 2%;
+  }
+
+  a i,
+  .rc {
+    color: $secondary-color;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  ul {
+    display: flex;
+  }
+}
+
+.icon-l {
+  margin-right: 1em;
+}
+
+.donation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 7px;
+
+  i {
+    font-size: 2em;
+    color: lighten($secondary-color, 30);
+  }
+}
+
+// end of .donation
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+  }
+
+  li {
+    margin: auto 1em;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  img {
+    max-width: 50px;
+    border-radius: 50%;
+    border: 1px solid $secondary-color;
+  }
+
+  a {
+    color: $secondary-color;
+    font-weight: 600;
+  }
+}
+
+.color-b {
+  background-color: $third-color;
+}
+
+.nav-left {
+  margin-top: 4px;
+
+  i {
+    margin: auto 1%;
+  }
+
+  span {
+    margin: auto 10px;
+  }
+}
+
+a:hover {
+  color: $principal-color;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $principal-color;
+  color: lighten($secondary-color, 50%);
+  position: relative;
+  padding: 1.5em 0;
+
+  &::after {
+    content: "\f1b0";
+    font-family: FontAwesome, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    font-size: 150px;
+    color: rgba($third-color, 0.3);
+    top: 50px;
+    left: 130px;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 1em;
+    margin: 1em;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  height: 36px;
+  color: $secondary-color;
+}
+
+input {
+  height: 36px;
+  text-align: center;
+}
+
+.adds-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $secondary-color;
+  background-color: lighten($secondary-color, 70%);
+  margin: auto 1%;
+
+  h4 {
+    padding-bottom: 0.5em;
+    font-size: 2em;
+  }
+} // end adds-container
+
+.buttons {
+  margin: 1em auto;
+}
+
+.mb,
+.d-tittle i {
+  margin-bottom: 0.5em;
+}
+
+.img-adds {
+  position: relative;
+  margin: 2%;
+
+  h3 {
+    margin: 9% auto;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .icons-image {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+
+    i {
+      font-size: 1em;
+      display: inline-flex;
+      justify-content: center;
+    }
+  }
+}
+
+.fas-l {
+  background-color: lighten($secondary-color, 37%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 1%;
+
+  &:hover {
+    transform: scale(1.5);
+    border: 2px solid $secondary-color;
+  }
+}
+
+.item {
+  background-color: lighten($secondary-color, 70%);
+  padding: 1em;
+  border: 2px solid lighten($secondary-color, 30%);
+  border-radius: 5px;
+  margin: 5% 3%;
+
+  a {
+    padding: 1%;
+  }
+
+  p {
+    padding: 2%;
+  }
+
+  img {
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.lists {
+  display: flex;
+  margin: 1em 0;
+
+  a {
+    color: $secondary-color;
+  }
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: $secondary-color;
+
+    a {
+      padding: 0;
+      margin: 0;
+      color: $principal-color;
+      font-weight: 600;
+    }
+  }
+}
+
+// end of .middle
+.lists ul,
+.categories {
+  padding-right: 1em;
+}
+
+.dogs-cats {
+  margin: 2em 2%;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+
+    &:nth-child(2) {
+      a {
+        color: $third-color;
+      }
+    }
+  }
+}
+// end of .dogs-cats
+
+.fas-m {
+  font-size: 1.2em;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-top: 2px solid lighten($secondary-color, 30);
+  margin: 2% auto;
+}
+
+.down {
+  display: flex;
+  justify-content: space-evenly;
+  color: $secondary-color;
+  background-color: lighten($secondary-color, 50%);
+  padding: 5%;
+  border-bottom: 3px solid lighten($secondary-color, 30%);
+}
+
+.puppies {
+  color: $secondary-color;
+}
+
+.puppies:hover {
+  color: $principal-color;
+}
+
+.down-info h2 {
+  color: $secondary-color;
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 2em;
+}
+
+.down-list h2 {
+  border-bottom: 2px solid $principal-color;
+  padding-bottom: 0.5em;
+}
+
+.color-p {
+  color: $principal-color;
+}
+
+@import "buttons";
+@import "medium";
+@import "small";

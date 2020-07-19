@@ -1,65 +1,67 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# HTML-CSS-capstone-project (based on an online shop for electronics)
 
-# Project Name
+> 
+This is a project for the HTML & CSS capstone project: Online shop for electronics (https://www.behance.net/gallery/24796463/ZATTIX).
+The Project is based on an online shop for electronics. I personalized the content, instead of a shop of electronics I built a page for the adoption of pets.
+In this task I was required to create a responsive page using the best practices of HTML AND CSS with GitHub process flow.
 
-> One paragraph statement about the project.
+## Desktop Screenshot
 
-![screenshot](./app_screenshot.png)
+![screenshot Adopt-page](app_screenshot.png)
+![screenshot Search-page](app_screenshot1.PNG)
 
-Additional description about the project and its features.
+## Small screen Screenshot
+
+![screenshot Adopt-page](app_screenshot3.PNG)
+![screenshot Search-page](app_screenshot4.PNG)
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- Twitter’s Bootstrap framework
+- HTML
+- CSS
+- SASS
+
+## Requirements
+- Use semantic HTML tags.
+- Use CSS selectors correctly.
+- Use HTML elements box model (margin, padding, width, height).
+- Use industry-standard tools (flexbox) to place elements in the page.
+- Ability to create UIs adaptable to different screen sizes using mediaqueries.
+- Apply front-end best practices.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link Adopt page](https://raw.githack.com/Rocio01/HTML-CSS-capstone-project/feature-branch/index.html) 
+
+[Live Demo Link Search page](https://raw.githack.com/Rocio01/HTML-CSS-capstone-project/feature-branch/search.html)
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Browser (Google Chrome, Mozilla Firefox, Safari or any other browser)
+
 ### Setup
 
-### Install
+- Download or clone the repository's files
+- Open the index.html file using any web browser of your choice
+- Additionally, You can go to [githack](https://raw.githack.com) and put the link of HTML file there and access the site from generated link.
 
-### Usage
+## Author
 
-### Run tests
+👤 **Rocio Martinez**
 
-### Deployment
+- Github: [@Rocio01](https://github.com/Rocio01)
+- Twitter: [@rugiada8801](https://twitter.com/rugiada8801)
+- Linkedin: [zulma-martinez-5247a31a8](https://www.linkedin.com/in/zulma-martinez-5247a31a8/)
 
-
-
-## Authors
-
-👤 **Author1**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/Rocio01/HTML-CSS-capstone-project/issues).
 
 ## Show your support
 
@@ -67,9 +69,13 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- GitHub
+- Bootstrap
+- SASS
+- [Mohammed Awad](https://www.behance.net/M_Awad) for the design guide.
+- [Fundacion adopta no compres](https://www.adoptanocompres.org/web/) for the inspiration.
+- [pixabay.com](https://pixabay.com/) for the free images of pets.
 
 ## 📝 License
 
