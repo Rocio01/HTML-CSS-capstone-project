@@ -6,7 +6,9 @@ button {
   padding: 8px 25px;
   margin: 3px;
   background-color: $principal-color;
-  color: lighten($secondary-color, 30%);
+  color: lighten($secondary-color, 80%);
+  font-size: 1em;
+  font-family: font80831, font114505, font95905, helvetica, arial, "Lucida Grande", sans-serif;
 
   &:hover {
     transform: scale(0.95);

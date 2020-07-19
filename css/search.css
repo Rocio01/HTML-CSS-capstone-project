@@ -165,8 +165,13 @@ nav ul li {
 }
 
 footer a i,
-footer .rc {
+.rc {
   color: #888;
+}
+
+.rc:hover {
+  color: #d35266;
+  text-decoration: none;
 }
 
 .nav-left li i {
@@ -180,10 +185,12 @@ footer .rc {
 button {
   display: inline-block;
   border-radius: 5px;
-  padding: 8px 25px;
+  padding: 8px 25px !important;
+  font-size: 1em;
   margin: 3px;
   background-color: #d35266;
-  color: #d5d5d5;
+  color: white;
+  font-family: font80831, font114505, font95905, helvetica, arial, "Lucida Grande", sans-serif;
 }
 
 button:hover {
@@ -220,7 +227,7 @@ button:hover {
   flex-grow: 3;
   align-items: center;
   background-color: #d35266;
-  color: #eee;
+  color: white;
   position: relative;
   padding: 1.5em 0;
   text-align: left;
@@ -252,23 +259,20 @@ form select {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 footer {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: white;
   color: #888;
   padding: 1%;
   width: 100%;
+  font-size: 1em;
+  font-weight: 400 !important;
 }
 
 footer h5,

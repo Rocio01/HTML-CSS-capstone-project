@@ -121,7 +121,7 @@ a {
 
 footer {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +262,7 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
   background-color: #d35266;
-  color: #eee;
+  color: white;
   position: relative;
   padding: 1.5em 0;
 }
@@ -511,6 +511,10 @@ input {
   border-bottom: 3px solid #d5d5d5;
 }
 
+.puppies {
+  color: #888;
+}
+
 .puppies:hover {
   color: #d35266;
 }
@@ -537,7 +541,9 @@ button {
   padding: 8px 25px;
   margin: 3px;
   background-color: #d35266;
-  color: #d5d5d5;
+  color: white;
+  font-size: 1em;
+  font-family: font80831, font114505, font95905, helvetica, arial, "Lucida Grande", sans-serif;
 }
 
 button:hover {
